@@ -7,6 +7,6 @@ defmodule AdventOfCodeTest do
   end
 
   test "day 1, Part 1" do
-    assert AdventOfCode.fd_most_calories() == 42
+    assert AdventOfCode.Day1.Part1.fd_most_calories() == {:ok, 71934}
   end
 end
