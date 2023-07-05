@@ -13,13 +13,9 @@ defmodule AdventOfCode.Day1.Part1 do
         end)
       end)
       |> Enum.map(fn list ->
-        Enum.reduce(list, fn x, y ->
-          x + y
-        end)
+        Enum.reduce(list, &(&1 + &2))
       end)
-      |> Enum.reduce(fn x, y ->
-        if x > y, do: x, else: y
-      end)
+      |> Enum.reduce(&(if &1 > &2, do: &1, else: &2))
 
     {:ok, result}
   end
