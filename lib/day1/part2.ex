@@ -1,4 +1,4 @@
-defmodule AdventOfCode.Day1.Part2 do
+defmodule AdventOfCode.Day1.D1P2 do
   def fd_top3_calories do
     result =
       File.read!("inputs/day1.txt")
